@@ -1,0 +1,189 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6fb;
+  color: #20243a;
+}
+
+.app {
+  width: min(100% - 32px, 900px);
+  margin: 0 auto;
+  padding: 55px 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.eyebrow {
+  color: #6256d9;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.header h1 {
+  margin: 12px 0;
+  font-size: clamp(38px, 6vw, 56px);
+  color: #20243a;
+}
+
+.header p:last-child {
+  color: #70758b;
+  font-size: 17px;
+}
+
+.form-card {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  padding: 28px;
+  background: white;
+  border: 1px solid #e4e7f0;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(30, 40, 80, 0.07);
+}
+
+.form-card h2,
+.notes-section h2 {
+  margin-top: 0;
+  font-size: 23px;
+}
+
+form label {
+  display: block;
+  margin: 18px 0 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d8dbea;
+  border-radius: 9px;
+  background: #fff;
+  color: #20243a;
+  font: inherit;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #6256d9;
+  box-shadow: 0 0 0 3px rgba(98, 86, 217, 0.12);
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button,
+.delete-button {
+  margin-top: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9px;
+  background: #6256d9;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #5044c4;
+}
+
+.notes-section {
+  margin-top: 35px;
+}
+
+.notes-section h2 {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.empty {
+  text-align: center;
+  color: #777d91;
+  padding: 28px;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.note-card {
+  padding: 22px;
+  background: white;
+  border: 1px solid #e4e7f0;
+  border-radius: 14px;
+  overflow-wrap: anywhere;
+  box-shadow: 0 5px 20px rgba(30, 40, 80, 0.04);
+}
+
+.note-card h3 {
+  margin-top: 0;
+  color: #302a65;
+}
+
+.note-card p {
+  color: #646a7d;
+  white-space: pre-wrap;
+}
+
+.delete-button {
+  background: #e5484d;
+  margin-top: 10px;
+}
+
+.delete-button:hover {
+  background: #c9343a;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding-top: 30px;
+  }
+
+  .form-card {
+    padding: 20px;
+  }
+}
+
+.form-card h2,
+.notes-section h2 {
+  color: #20243a;
+}
+
+.header h1 {
+  color: #20243a;
+}
+
+.header p {
+  color: #70758b;
+}
+
+.form-card {
+  color: #20243a;
+}
+
+.notes-section {
+  color: #20243a;
+}
