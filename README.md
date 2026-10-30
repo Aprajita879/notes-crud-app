@@ -3,7 +3,7 @@
 A full-stack Notes Management Application that allows users to create, view, update, and delete notes through a simple and user-friendly interface.
 
 ## Live Demo
-[Open Live Application](PASTE_YOUR_VERCEL_URL_HERE)
+[Open Live Application]([https://notes-crud-app-kohl.vercel.app/](https://notes-crud-app-kohl.vercel.app/)
 
 ## Features
 - Create new notes
